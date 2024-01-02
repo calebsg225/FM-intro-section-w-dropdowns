@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/FM-intro-section-w-dropdowns/static/css/main.31d6cfe0.css",
+    "main.js": "/FM-intro-section-w-dropdowns/static/js/main.6a172cf7.js",
+    "index.html": "/FM-intro-section-w-dropdowns/index.html",
+    "main.6a172cf7.js.map": "/FM-intro-section-w-dropdowns/static/js/main.6a172cf7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.6a172cf7.js"
+  ]
+}
