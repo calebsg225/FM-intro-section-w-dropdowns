@@ -1,3 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&family=Epilogue:wght@500;700&display=swap");
+body {
+  font-family: "Epilogue";
+  margin: 0;
+}
 
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+  color: hsl(0deg, 0%, 8%);
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  color: hsl(0deg, 0%, 41%);
+  line-height: 1.5rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main img {
+  margin-bottom: 2rem;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.7rem;
+}
+main section .learn-more {
+  margin: 0.2rem auto 3rem;
+  border: 1px solid hsl(0deg, 0%, 8%);
+  border-radius: 0.8rem;
+  background-color: hsl(0deg, 0%, 8%);
+  padding: 0.6rem 1rem;
+}
+main section .learn-more p {
+  color: hsl(0deg, 0%, 98%);
+  margin: 0;
+}
+main section .client-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section .client-logos img {
+  width: 20%;
+}
 
 /*# sourceMappingURL=index.css.map */

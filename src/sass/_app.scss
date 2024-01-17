@@ -1,0 +1,17 @@
+body {
+  font-family: 'Epilogue';
+  margin: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+  color: $almost-black;
+  margin: 0;
+}
+
+p {
+  font-size: $p-font-size;
+  color: $medium-gray;
+  line-height: 1.5rem;
+}

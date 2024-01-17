@@ -1,0 +1,36 @@
+main {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    margin-bottom: 2rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: $mobile-padding;
+    .learn-more {
+      margin: .2rem auto 3rem;
+      border: 1px solid $almost-black;
+      border-radius: .8rem;
+      background-color: $almost-black;
+      padding: .6rem 1rem;
+
+      p {
+        color: $almost-white;
+        margin: 0;
+      }
+    }
+
+    .client-logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 20%;
+      }
+    }
+  }
+}
