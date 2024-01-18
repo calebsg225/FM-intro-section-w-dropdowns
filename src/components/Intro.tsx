@@ -1,5 +1,3 @@
-import heroDesktop from '../images/image-hero-desktop.png';
-import heroMobile from '../images/image-hero-mobile.png';
 import clientDatabiz from '../images/client-databiz.svg';
 import clientAudiophile from '../images/client-audiophile.svg';
 import clientMeet from '../images/client-meet.svg';
@@ -9,7 +7,7 @@ const Intro = () => {
 	const clientLogos = [clientDatabiz, clientAudiophile, clientMeet, clientMaker]
 	return (
 		<main>
-			<img src={heroMobile} alt="hero"/>
+			<div className='hero-image'></div>
 			<section className='intro-text-container'>
 				<h2>Make remote work</h2>
 				<p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>

@@ -1,9 +1,16 @@
 main {
   display: flex;
   flex-direction: column;
+  height: 100%;
 
-  img {
-    margin-bottom: 2rem;
+  .hero-image {
+    background-image: url('images/image-hero-mobile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 18rem;
+    margin-bottom: 1.5rem;
   }
 
   section {
@@ -12,12 +19,19 @@ main {
     text-align: center;
     padding: $mobile-padding;
     .learn-more {
+      &:hover {
+        background-color: $almost-white;
+        p {
+          color: $almost-black;
+        }
+      }
+      cursor: pointer;
       margin: .2rem auto 3rem;
-      border: 1px solid $almost-black;
+      border: 2px solid $almost-black;
       border-radius: .8rem;
       background-color: $almost-black;
       padding: .6rem 1rem;
-
+      
       p {
         color: $almost-white;
         margin: 0;

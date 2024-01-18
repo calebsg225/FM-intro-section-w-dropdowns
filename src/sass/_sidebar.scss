@@ -1,0 +1,19 @@
+.sidebar-container {
+  position: absolute;
+  inset: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.768);
+  .sidebar {
+    position: absolute;
+    inset: 0 0 0 35%;
+    background: white;
+    img {
+      position: absolute;
+      inset: 1rem 1rem auto auto;
+    }
+  }
+}
+
+.hide-sidebar {
+  display: none;
+}
