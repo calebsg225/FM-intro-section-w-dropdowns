@@ -1,11 +1,18 @@
+
 .sidebar-container {
+  pointer-events: none;
   position: absolute;
   inset: 0;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.768);
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color $transition-speed $transition-timing-function;
+  overflow: hidden;
   .sidebar {
+    pointer-events: all;
     position: absolute;
     inset: 0 0 0 35%;
+    transform: translateX(105%);
+    transition: transform $transition-speed $transition-timing-function;
     background: white;
     img {
       position: absolute;
@@ -14,6 +21,10 @@
   }
 }
 
-.hide-sidebar {
-  display: none;
+
+.show-sidebar {
+  background-color: rgba(0, 0, 0, 0.7);
+  .sidebar {
+    transform: translateX(0);
+  }
 }

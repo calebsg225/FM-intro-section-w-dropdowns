@@ -11,7 +11,7 @@ const Sidebar = ({features, company, hideSidebar, setHideSidebar}:SidebarProps) 
   return (
     <div className={"sidebar-container " + hideSidebar}>
       <div className="sidebar">
-        <img onClick={() => {setHideSidebar('hide-sidebar')}} src={exitSidebar} alt="exit sidebar" />
+        <img onClick={() => {setHideSidebar('')}} src={exitSidebar} alt="exit sidebar" />
       </div>
     </div>
   )

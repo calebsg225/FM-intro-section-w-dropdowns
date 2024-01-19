@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 
+import hamburger from '../images/icon-menu.svg';
 import todoImg from '../images/icon-todo.svg';
 import calenderImg from '../images/icon-calendar.svg';
 import reminderImg from '../images/icon-reminders.svg';
@@ -16,16 +17,17 @@ const Header = () => {
   };
   const company = ["History", "Our Team", "Blog"];
 
-  const [hideSidebar, setHideSidebar] = useState('hide-sidebar');
+  const [hideSidebar, setHideSidebar] = useState('');
   return (
     <header>
       <h2>snap</h2>
-      <Navbar features={features} company={company} setHideSidebar={setHideSidebar}/>
+      <Navbar features={features} company={company}/>
       <Sidebar
         features={features}
         company={company}
         hideSidebar={hideSidebar}
         setHideSidebar={setHideSidebar}/>
+      <img className="open-sidebar" onClick={() => setHideSidebar('show-sidebar')} src={hamburger} alt="hamburger"/>
     </header>
   )
 }

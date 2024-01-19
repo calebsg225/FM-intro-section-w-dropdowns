@@ -1,16 +1,12 @@
-import hamburger from '../images/icon-menu.svg';
-
 interface NavbarProps {
   features: {[key: string]: string},
-  company: string[],
-  setHideSidebar: Function
+  company: string[]
 }
 
-const Navbar = ({features, company, setHideSidebar}:NavbarProps) => {
+const Navbar = ({features, company}:NavbarProps) => {
   return (
     <div className="navbar-container">
       <div className="navbar"></div>
-      <img onClick={() => setHideSidebar('')} src={hamburger} alt="hamburger"/>
     </div>
   )
 }

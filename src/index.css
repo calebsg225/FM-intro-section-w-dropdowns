@@ -72,14 +72,20 @@ main section .client-logos img {
 }
 
 .sidebar-container {
+  pointer-events: none;
   position: absolute;
   inset: 0;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.768);
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease-in-out;
+  overflow: hidden;
 }
 .sidebar-container .sidebar {
+  pointer-events: all;
   position: absolute;
   inset: 0 0 0 35%;
+  transform: translateX(105%);
+  transition: transform 0.3s ease-in-out;
   background: white;
 }
 .sidebar-container .sidebar img {
@@ -87,8 +93,11 @@ main section .client-logos img {
   inset: 1rem 1rem auto auto;
 }
 
-.hide-sidebar {
-  display: none;
+.show-sidebar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.show-sidebar .sidebar {
+  transform: translateX(0);
 }
 
 /*# sourceMappingURL=index.css.map */
