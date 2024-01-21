@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FM-intro-section-w-dropdowns/static/css/main.d99d3c5d.css",
+    "main.css": "/FM-intro-section-w-dropdowns/static/css/main.7e811901.css",
     "main.js": "/FM-intro-section-w-dropdowns/static/js/main.ec572a0c.js",
     "static/media/image-hero-mobile.png": "/FM-intro-section-w-dropdowns/static/media/image-hero-mobile.adefc8b1bbed2ca80470.png",
     "static/media/client-databiz.svg": "/FM-intro-section-w-dropdowns/static/media/client-databiz.d1e7955f847e089183caf61eb54feb51.svg",
@@ -14,11 +14,11 @@
     "static/media/icon-todo.svg": "/FM-intro-section-w-dropdowns/static/media/icon-todo.84eeba8f3b9a1811c1ea3d7420dcfd98.svg",
     "static/media/icon-close-menu.svg": "/FM-intro-section-w-dropdowns/static/media/icon-close-menu.3f33fd68b142340b7eb8c6887f92ee0c.svg",
     "static/media/icon-menu.svg": "/FM-intro-section-w-dropdowns/static/media/icon-menu.863803c904916606b7a1998b3c5736aa.svg",
-    "main.d99d3c5d.css.map": "/FM-intro-section-w-dropdowns/static/css/main.d99d3c5d.css.map",
+    "main.7e811901.css.map": "/FM-intro-section-w-dropdowns/static/css/main.7e811901.css.map",
     "main.ec572a0c.js.map": "/FM-intro-section-w-dropdowns/static/js/main.ec572a0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.d99d3c5d.css",
+    "static/css/main.7e811901.css",
     "static/js/main.ec572a0c.js"
   ]
 }
