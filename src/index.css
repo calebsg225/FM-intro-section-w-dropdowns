@@ -128,7 +128,7 @@ main section .client-logos img {
     width: 18%;
   }
 }
-@media (min-width: 1125px) {
+@media (min-width: 1312.5px) {
   main {
     padding: 0 2rem 0 9.9rem;
   }

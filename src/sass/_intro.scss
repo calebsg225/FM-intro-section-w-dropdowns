@@ -93,7 +93,7 @@ main {
   }
 }
 
-@media (min-width: calc($mobile-max * 1.5)) {
+@media (min-width: calc($mobile-max * 1.75)) {
   main {
     padding: 0 2rem 0 9.9rem;
   }
