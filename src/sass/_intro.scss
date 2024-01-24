@@ -71,6 +71,7 @@ main {
       h2 {
         font-size: 5rem;
         margin: 5rem 0;
+        max-width: 33rem;
       }
       p {
         font-size: 18px;
@@ -95,6 +96,6 @@ main {
 
 @media (min-width: calc($mobile-max * 1.75)) {
   main {
-    padding: 0 2rem 0 9.9rem;
+    padding: 0 3.5rem 0 9.9rem;
   }
 }

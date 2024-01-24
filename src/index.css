@@ -109,6 +109,7 @@ main section .client-logos img {
   main section h2 {
     font-size: 5rem;
     margin: 5rem 0;
+    max-width: 33rem;
   }
   main section p {
     font-size: 18px;
@@ -130,7 +131,7 @@ main section .client-logos img {
 }
 @media (min-width: 1312.5px) {
   main {
-    padding: 0 2rem 0 9.9rem;
+    padding: 0 3.5rem 0 9.9rem;
   }
 }
 @media (max-width: 749px) {
