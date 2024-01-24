@@ -30,7 +30,7 @@ header .open-sidebar {
 
 @media (min-width: 750px) {
   header {
-    padding: 0 1rem;
+    padding: 0.8rem 1rem;
     justify-content: center;
   }
   header h2 {
@@ -90,18 +90,18 @@ main section .client-logos img {
   width: 20%;
 }
 
-@media (min-width: 937.5px) {
+@media (min-width: 750px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 7rem;
     align-items: center;
-    padding: 0 7rem;
+    padding: 0 2rem 0 2rem;
   }
   main .hero-image {
     order: 1;
     background-image: url("images/image-hero-desktop.png");
     aspect-ratio: 1/1.33;
+    max-width: 30rem;
   }
   main section {
     text-align: left;
@@ -112,6 +112,25 @@ main section .client-logos img {
   }
   main section p {
     font-size: 18px;
+    margin: 0;
+    max-width: 30rem;
+  }
+  main section .learn-more {
+    margin: 3rem 0 6rem;
+    width: 10rem;
+    aspect-ratio: 2.9/1;
+    padding: 0;
+  }
+  main section .client-logos {
+    max-width: 30rem;
+  }
+  main section .client-logos img {
+    width: 18%;
+  }
+}
+@media (min-width: 1125px) {
+  main {
+    padding: 0 2rem 0 9.9rem;
   }
 }
 @media (max-width: 749px) {

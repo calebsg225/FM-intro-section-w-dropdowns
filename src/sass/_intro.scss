@@ -53,30 +53,48 @@ main {
   }
 }
 
-@media (min-width: calc($mobile-max * 1.25)) {
+@media (min-width: calc($mobile-max)) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 7rem;
     align-items: center;
-    padding: 0 7rem;
+    padding: 0 2rem 0 2rem;
     .hero-image {
       order: 1;
       background-image: url('images/image-hero-desktop.png');
       aspect-ratio: 1/1.33;
+      max-width: 30rem;
     }
     section {
       text-align: left;
+      //margin-left: 7.9rem;
       h2 {
         font-size: 5rem;
         margin: 5rem 0;
       }
       p {
         font-size: 18px;
+        margin: 0;
+        max-width: 30rem;
       }
       .learn-more {
-        
+        margin: 3rem 0 6rem;
+        width: 10rem;
+        aspect-ratio: 2.9/1;
+        padding: 0;
+      }
+      .client-logos {
+        max-width: 30rem;
+        img {
+          width: 18%;
+        }
       }
     }
+  }
+}
+
+@media (min-width: calc($mobile-max * 1.5)) {
+  main {
+    padding: 0 2rem 0 9.9rem;
   }
 }
