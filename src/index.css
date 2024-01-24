@@ -90,6 +90,30 @@ main section .client-logos img {
   width: 20%;
 }
 
+@media (min-width: 937.5px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7rem;
+    align-items: center;
+    padding: 0 7rem;
+  }
+  main .hero-image {
+    order: 1;
+    background-image: url("images/image-hero-desktop.png");
+    aspect-ratio: 1/1.33;
+  }
+  main section {
+    text-align: left;
+  }
+  main section h2 {
+    font-size: 5rem;
+    margin: 5rem 0;
+  }
+  main section p {
+    font-size: 18px;
+  }
+}
 @media (max-width: 749px) {
   .navigation-container {
     pointer-events: none;
@@ -133,9 +157,15 @@ main section .client-logos img {
   display: flex;
   align-items: center;
   list-style: none;
-}
-.navigation-container .navigation .nav-item-container li .dropdown-toggle {
   cursor: pointer;
+}
+.navigation-container .navigation .nav-item-container li:hover p {
+  color: hsl(0deg, 0%, 8%);
+}
+.navigation-container .navigation .nav-item-container li:hover svg path {
+  stroke: hsl(0deg, 0%, 8%);
+}
+.navigation-container .navigation .nav-item-container li svg {
   margin-left: 1rem;
 }
 .navigation-container .navigation .registration-buttons-container {
@@ -179,7 +209,7 @@ main section .client-logos img {
   .navigation-container .navigation .nav-item-container {
     gap: 2rem;
   }
-  .navigation-container .navigation .nav-item-container li .dropdown-toggle {
+  .navigation-container .navigation .nav-item-container li svg {
     margin-left: 0.5rem;
   }
   .navigation-container .navigation .registration-buttons-container {

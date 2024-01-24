@@ -42,15 +42,27 @@
   .navigation {
     .nav-item-container {
       display: flex;
+
       li {
         display: flex;
         align-items: center;
         list-style: none;
-        .dropdown-toggle {
-          cursor: pointer;
+        cursor: pointer;
+
+        &:hover {
+          p {
+            color: $almost-black;
+          }
+          svg path {
+            stroke: $almost-black;
+          }
+        }
+
+        svg {
           margin-left: 1rem;
         }
       }
+
     }
 
     .registration-buttons-container {
@@ -98,7 +110,7 @@
       .nav-item-container {
         gap: 2rem;
         li {
-          .dropdown-toggle {
+          svg {
             margin-left: .5rem;
           }
         }

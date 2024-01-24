@@ -1,4 +1,4 @@
-import arrowDown from "../images/icon-arrow-down.svg";
+import { ReactComponent as ArrowDown } from "../images/icon-arrow-down.svg";
 import arrowUp from "../images/icon-arrow-up.svg";
 
 interface DropdownProps {
@@ -10,7 +10,7 @@ const Dropdown = ({title, items}:DropdownProps) => {
   return (
     <li>
       <p>{title}</p>
-      <img className="dropdown-toggle" src={arrowDown} alt="arrowDown" />
+      <ArrowDown />
     </li>
   )
 }
