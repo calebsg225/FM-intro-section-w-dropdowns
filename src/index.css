@@ -153,6 +153,9 @@ main section .client-logos img {
     background: white;
     overflow: scroll;
   }
+  .navigation-container .navigation::-webkit-scrollbar {
+    display: none;
+  }
   .navigation-container .navigation .close-sidebar {
     position: absolute;
     inset: 1.2rem 1.2rem auto auto;
@@ -174,19 +177,23 @@ main section .client-logos img {
 .navigation-container .navigation .nav-item-container {
   display: flex;
 }
-.navigation-container .navigation .nav-item-container li {
+.navigation-container .navigation .nav-item-container > li {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   list-style: none;
   cursor: pointer;
 }
-.navigation-container .navigation .nav-item-container li:hover .nav-title {
+.navigation-container .navigation .nav-item-container > li:hover .nav-title {
   color: hsl(0deg, 0%, 8%);
 }
-.navigation-container .navigation .nav-item-container li:hover svg path {
+.navigation-container .navigation .nav-item-container > li:hover svg path {
   stroke: hsl(0deg, 0%, 8%);
 }
-.navigation-container .navigation .nav-item-container li svg {
+.navigation-container .navigation .nav-item-container > li > div {
+  display: flex;
+  align-items: center;
+}
+.navigation-container .navigation .nav-item-container > li svg {
   margin-left: 1rem;
 }
 .navigation-container .navigation .registration-buttons-container {
@@ -230,7 +237,7 @@ main section .client-logos img {
   .navigation-container .navigation .nav-item-container {
     gap: 2rem;
   }
-  .navigation-container .navigation .nav-item-container li svg {
+  .navigation-container .navigation .nav-item-container > li svg {
     margin-left: 0.5rem;
   }
   .navigation-container .navigation .registration-buttons-container {
@@ -240,6 +247,35 @@ main section .client-logos img {
   .navigation-container .navigation .registration-buttons-container .registration-button {
     padding-inline: 1.5rem;
     margin-inline: 1rem;
+  }
+}
+.dropdown-container {
+  list-style: none;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  max-height: 12rem;
+}
+.dropdown-container > li {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 0;
+  cursor: pointer;
+}
+.dropdown-container > li:hover p {
+  color: hsl(0deg, 0%, 8%);
+}
+.dropdown-container > li img {
+  margin-right: 1rem;
+  width: 1rem;
+}
+
+.dropdown-hidden {
+  max-height: 0;
+}
+
+@media (min-width: 750px) {
+  .dropdown-container {
+    position: absolute;
   }
 }
 

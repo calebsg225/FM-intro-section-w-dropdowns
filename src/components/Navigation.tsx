@@ -31,10 +31,14 @@ const Navigation = ({hideSidebar, setHideSidebar}:SidebarProps) => {
           <Dropdown title="Features" items={features}/>
           <Dropdown title="Company" items={company}/>
           <li>
-            <p className='nav-title'>Careers</p>
+            <div>
+              <p className='nav-title'>Careers</p>
+            </div>
           </li>
           <li>
-            <p className='nav-title'>About</p>
+            <div>
+              <p className='nav-title'>About</p>
+            </div>
           </li>
         </ul>
         <div className='registration-buttons-container'>

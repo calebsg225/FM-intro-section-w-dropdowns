@@ -16,6 +16,10 @@
       transition: transform $transition-speed $transition-timing-function;
       background: white;
       overflow: scroll;
+      
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       .close-sidebar {
         position: absolute;
@@ -43,10 +47,9 @@
   .navigation {
     .nav-item-container {
       display: flex;
-
-      li {
+      > li {
         display: flex;
-        align-items: center;
+        flex-direction: column;
         list-style: none;
         cursor: pointer;
 
@@ -57,6 +60,11 @@
           svg path {
             stroke: $almost-black;
           }
+        }
+
+        > div {
+          display: flex;
+          align-items: center;
         }
 
         svg {
@@ -81,10 +89,10 @@
         cursor: pointer;
 
         &:hover {
+          border-color: $almost-black;
           p {
             color: $almost-black;
           }
-          border-color: $almost-black;
         }
       }
       .login-button {
@@ -110,7 +118,7 @@
 
       .nav-item-container {
         gap: 2rem;
-        li {
+        > li {
           svg {
             margin-left: .5rem;
           }

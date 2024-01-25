@@ -11,12 +11,14 @@ const Dropdown = ({title, items}:DropdownProps) => {
   const [ isDropped, setIsDropped ] = useState(false);
 
   return (
-    <li onClick={() => setIsDropped(!isDropped)}>
-      <p className="nav-title">{title}</p>
-      {isDropped ? <ArrowUp /> : <ArrowDown /> }
-      <ul className="dropdown-container">
+    <li>
+      <div onClick={() => setIsDropped(!isDropped)}>
+        <p className="nav-title">{title}</p>
+        {isDropped ? <ArrowUp /> : <ArrowDown /> }
+      </div>
+      <ul className={"dropdown-container" + (!isDropped ? " dropdown-hidden" : '')}>
         {Array.from(items).map(([item, image]) => (
-          <li className="dropdown-item">
+          <li>
             {image && (<img src={image} alt={item}/>)}
             <p>{item}</p>
           </li>

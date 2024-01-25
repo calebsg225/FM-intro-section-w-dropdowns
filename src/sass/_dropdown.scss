@@ -1,0 +1,33 @@
+.dropdown-container {
+  list-style: none;
+  transition: max-height .2s ease-out;
+  overflow: hidden;
+  max-height: 12rem;
+  > li {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0;
+    cursor: pointer;
+
+    &:hover {
+      p {
+        color: $almost-black;
+      }
+    }
+
+    img {
+      margin-right: 1rem;
+      width: 1rem;
+    }
+  }
+}
+
+.dropdown-hidden {
+  max-height: 0;
+}
+
+@media (min-width: $mobile-max) {
+  .dropdown-container {
+    position: absolute;
+  }
+}
