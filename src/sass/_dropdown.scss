@@ -28,6 +28,22 @@
 
 @media (min-width: $mobile-max) {
   .dropdown-container {
+    z-index: 800;
+    background-color: white;
     position: absolute;
+    inset: 3rem 0 auto auto;
+    padding: 0 2rem .8rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .1);
+    transition: padding .2s, max-height .2s ease-out;
+    width: max-content;
+  }
+
+  .company-dropdown {
+    inset: 3rem auto auto 0;
+  }
+
+  .dropdown-hidden {
+    padding: 0;
   }
 }

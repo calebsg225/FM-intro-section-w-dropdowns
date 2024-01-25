@@ -16,7 +16,7 @@ const Dropdown = ({title, items}:DropdownProps) => {
         <p className="nav-title">{title}</p>
         {isDropped ? <ArrowUp /> : <ArrowDown /> }
       </div>
-      <ul className={"dropdown-container" + (!isDropped ? " dropdown-hidden" : '')}>
+      <ul className={"dropdown-container" + (!isDropped ? " dropdown-hidden" : '') + (title === 'Company' ? ' company-dropdown' : '')}>
         {Array.from(items).map(([item, image]) => (
           <li>
             {image && (<img src={image} alt={item}/>)}

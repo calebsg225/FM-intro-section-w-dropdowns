@@ -28,7 +28,7 @@ header .open-sidebar {
   cursor: pointer;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
   header {
     padding: 0.8rem 1rem;
     justify-content: center;
@@ -90,7 +90,7 @@ main section .client-logos img {
   width: 20%;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -129,19 +129,19 @@ main section .client-logos img {
     width: 18%;
   }
 }
-@media (min-width: 1312.5px) {
+@media (min-width: 1400px) {
   main {
     padding: 0 3.5rem 0 9.9rem;
   }
 }
-@media (max-width: 749px) {
+@media (max-width: 799px) {
   .navigation-container {
     pointer-events: none;
     position: fixed;
     inset: 0;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
     overflow: hidden;
   }
   .navigation-container .navigation {
@@ -149,7 +149,7 @@ main section .client-logos img {
     position: absolute;
     inset: 0 0 0 35%;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     background: white;
     overflow: scroll;
   }
@@ -178,6 +178,7 @@ main section .client-logos img {
   display: flex;
 }
 .navigation-container .navigation .nav-item-container > li {
+  position: relative;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -221,7 +222,7 @@ main section .client-logos img {
   border: none;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
   .navigation-container {
     width: 100%;
     position: block;
@@ -273,9 +274,23 @@ main section .client-logos img {
   max-height: 0;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
   .dropdown-container {
+    z-index: 800;
+    background-color: white;
     position: absolute;
+    inset: 3rem 0 auto auto;
+    padding: 0 2rem 0.8rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: padding 0.2s, max-height 0.2s ease-out;
+    width: max-content;
+  }
+  .company-dropdown {
+    inset: 3rem auto auto 0;
+  }
+  .dropdown-hidden {
+    padding: 0;
   }
 }
 
