@@ -137,7 +137,7 @@ main section .client-logos img {
 @media (max-width: 749px) {
   .navigation-container {
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     inset: 0;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0);
@@ -151,6 +151,7 @@ main section .client-logos img {
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     background: white;
+    overflow: scroll;
   }
   .navigation-container .navigation .close-sidebar {
     position: absolute;
@@ -179,7 +180,7 @@ main section .client-logos img {
   list-style: none;
   cursor: pointer;
 }
-.navigation-container .navigation .nav-item-container li:hover p {
+.navigation-container .navigation .nav-item-container li:hover .nav-title {
   color: hsl(0deg, 0%, 8%);
 }
 .navigation-container .navigation .nav-item-container li:hover svg path {

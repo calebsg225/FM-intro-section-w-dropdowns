@@ -12,17 +12,17 @@ interface SidebarProps {
 }
 
 const Navigation = ({hideSidebar, setHideSidebar}:SidebarProps) => {
-  const features = {
-    "Todo List": todoImg,
-    "Calender": calenderImg,
-    "Reminders": reminderImg,
-    "Planning": planningImg
-  };
-  const company = {
-    "History": "none",
-    "Our Team": "none",
-    "Blog": "none"
-  };
+  const features = new Map([
+    ["Todo List", todoImg ],
+    ["Calender", calenderImg],
+    ["Reminders", reminderImg],
+    ["Planning", planningImg]
+  ]);
+  const company = new Map([
+    ["History", null],
+    ["Our Team", null],
+    ["Blog", null]
+  ]);
   return (
     <div className={"navigation-container " + hideSidebar}>
       <nav className="navigation">
@@ -31,10 +31,10 @@ const Navigation = ({hideSidebar, setHideSidebar}:SidebarProps) => {
           <Dropdown title="Features" items={features}/>
           <Dropdown title="Company" items={company}/>
           <li>
-            <p>Careers</p>
+            <p className='nav-title'>Careers</p>
           </li>
           <li>
-            <p>About</p>
+            <p className='nav-title'>About</p>
           </li>
         </ul>
         <div className='registration-buttons-container'>
